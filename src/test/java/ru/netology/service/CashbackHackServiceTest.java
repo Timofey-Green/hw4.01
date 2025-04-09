@@ -1,13 +1,14 @@
 package ru.netology.service;
 
-import org.testng.annotations.Test;
+import org.junit.Test;
 
-import static org.testng.Assert.assertEquals;
+import static org.junit.Assert.assertEquals;
+
 
 public class CashbackHackServiceTest {
 
-    @org.testng.annotations.Test
-    void averagePurchaseValue() {
+    @Test
+    public void averagePurchaseValue() {
 
         CashbackHackService service = new CashbackHackService();
         int amount = 900;
@@ -18,8 +19,8 @@ public class CashbackHackServiceTest {
 
     }
 
-    @org.testng.annotations.Test
-    void lowerLimitSum() {
+    @Test
+    public void lowerLimitSum() {
 
         CashbackHackService service = new CashbackHackService();
         int amount = 1;
@@ -30,8 +31,8 @@ public class CashbackHackServiceTest {
 
     }
 
-    @org.testng.annotations.Test
-    void upperLimitSum() {
+    @Test
+    public void upperLimitSum() {
 
         CashbackHackService service = new CashbackHackService();
         int amount = 999;
@@ -43,8 +44,8 @@ public class CashbackHackServiceTest {
     }
 
 
-    @org.testng.annotations.Test
-    void purchaseFor1000() {
+    @Test
+    public void purchaseFor1000() {
 
         CashbackHackService service = new CashbackHackService();
         int amount = 1000;
